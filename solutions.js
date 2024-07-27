@@ -29,4 +29,63 @@ function isTrue(input){
     return isTrue;
 }
 
+function isFalse(input){
+    var isFalse = false;
+    if (input === false){
+        isFalse = true;
+    }
+    return isFalse;
+} 
+
+function not(input){
+    return !input;
+}
+
+function addOne(x){
+    x = Number(x);
+    return x += 1;
+}
+
+function isEven(x){
+    return x % 2 === 0 || x == 0 ? true : false;
+}
+
+function isIdentical(x, y){
+    return x === y ? true : false;
+}
+
+function isEqual(x,y){
+    if (x == y){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function or(x,y){
+    return x || y;
+}
+
+function and(x,y){
+    return x && y;
+}
+
+function isString(x){
+    if (typeof x == "string"){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function concat(x,y){
+    if (isString(x) == true && isString(y) == true){
+        return x + y;
+    } else if (isNaN(x) == false && isNaN(y) == false){
+        return x.toString() + y.toString();
+    }
+}
+
+
+
 
