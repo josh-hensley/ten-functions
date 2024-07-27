@@ -21,3 +21,12 @@
  * concat
  */
 
+function isTrue(input){
+    var isTrue = false;
+    if (input === true){
+        isTrue = true;
+    }
+    return isTrue;
+}
+
+
